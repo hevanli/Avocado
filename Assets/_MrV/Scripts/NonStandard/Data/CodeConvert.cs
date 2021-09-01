@@ -33,12 +33,12 @@ namespace NonStandard.Data {
 		/// used to compile an object out of JSON
 		/// </summary>
 		/// <typeparam name="T">the type being parsed</typeparam>
-		/// <param name="text"></param>
-		/// <param name="data"></param>
-		/// <param name="scope"></param>
+		/// <param name="text">JSON-like script to parse</param>
+		/// <param name="data">output object</param>
+		/// <param name="scope">where to search for variables when resolving non-string token values</param>
 		/// <param name="tokenizer">optional tokenizer, useful if you want to get errors</param>
-		/// <returns></returns>
-		public static bool TryParse<T>(string text, out T data, object scope, Tokenizer tokenizer = null) {
+		/// <returns>true if data was parsed without error. any errors can be reviewed in the 'tokenizer' parameter</returns>
+		public static bool TryParse<T>(string text, out T data, object scope = null, Tokenizer tokenizer = null) {
 			object value = null;
 			bool result = TryParseType(typeof(T), text, ref value, scope, tokenizer);
 			data = (T)value;
