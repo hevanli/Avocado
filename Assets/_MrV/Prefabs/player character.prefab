@@ -1,0 +1,912 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7165412181166535654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7165412181166535657}
+  - component: {fileID: 7165412181166535658}
+  - component: {fileID: 7165412181166535659}
+  - component: {fileID: 7165412181166535661}
+  - component: {fileID: 7165412181166535656}
+  m_Layer: 0
+  m_Name: player character body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7165412181166535657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181166535654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7165412181275740906}
+  - {fileID: 7165412181179619407}
+  m_Father: {fileID: 7165412181837687541}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7165412181166535658
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181166535654}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7165412181166535659
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181166535654}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7165412181166535661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181166535654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1be6b93e8e8ce94384d9e1bdd39303b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whoToFollow: {fileID: 7165412181837687541}
+  followPosition: 1
+  followRotation: 1
+  positionOffset: {x: 0, y: 0, z: 0}
+  smoothPositionFollow: 0
+  smoothRotationFollow: 360
+  whoToFollowRot: {x: 0, y: 0, z: 0, w: 0}
+  selfRot: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7165412181166535656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181166535654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9a412ca4a186a4f8bbd026e756bb7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whereToGo: {fileID: 0}
+  worldPositionStays: 0
+--- !u!1 &7165412181179619404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7165412181179619407}
+  m_Layer: 0
+  m_Name: head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7165412181179619407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181179619404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7165412181166535657}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7165412181275740907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7165412181275740906}
+  - component: {fileID: 7165412181275740908}
+  - component: {fileID: 7165412181275740909}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7165412181275740906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181275740907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.583, z: 0.238}
+  m_LocalScale: {x: 0.5, y: 0.125, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 7165412181166535657}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7165412181275740908
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181275740907}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7165412181275740909
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181275740907}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 86b7be2f075213c438959b8c19d97422, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7165412181837687537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7165412181837687541}
+  - component: {fileID: 7165412181837687536}
+  - component: {fileID: 7165412181837687543}
+  - component: {fileID: 7165412181837687540}
+  - component: {fileID: 7165412181837687542}
+  - component: {fileID: 7165412181837687539}
+  m_Layer: 0
+  m_Name: player character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7165412181837687541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181837687537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7165412181878054163}
+  - {fileID: 7165412182393592489}
+  - {fileID: 7165412181166535657}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7165412181837687536
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181837687537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7165412181837687543
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181837687537}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7165412181837687540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181837687537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6190bec7092894685c41faed63ea22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bindOnStart: 1
+  homePoint: {x: 0, y: 0, z: 0}
+  gameAreaInhabited: []
+--- !u!114 &7165412181837687542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181837687537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65415baf426f8ec47a300d34a0a50dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  head: {fileID: 7165412181179619407}
+  move:
+    speed: 5
+    maxStableAngle: 60
+    automaticMovement:
+      targetPosition: {x: 0, y: 0, z: 0}
+      closeEnough: 0
+      enabled: 0
+      jumpAtObstacle: 0
+      arrived: 0
+    disabled: 0
+    canMoveInAir: 1
+    lookForwardMoving: 1
+    maintainSpeedAgainstWall: 0
+    systemMovement: 0
+    isStableOnGround: 0
+    strafeRightMovement: 0
+    moveForwardMovement: 0
+    turnClockwise: 0
+    moveDirection: {x: 0, y: 0, z: 0}
+    groundNormal: {x: 0, y: 0, z: 0}
+    oppositionDirection: {x: 0, y: 0, z: 0}
+    lastVelocity: {x: 0, y: 0, z: 0}
+    lastOppositionDirection: {x: 0, y: 0, z: 0}
+    orientationTransform: {fileID: 7165412181878054163}
+  jump:
+    isJumping: 0
+    peaked: 0
+    heightSet: 0
+    pressed: 0
+    showJumpArc: 0
+    forgiveLateJumps: 1
+    enabled: 1
+    minJumpHeight: 0.125
+    maxJumpHeight: 1
+    fullJumpPressDuration: 0.25
+    doubleJumps: 0
+    TimedJumpPress: 0
+    targetJumpHeight: 0
+    position: {x: 0, y: 0, z: 0}
+    usedDoubleJumps: 0
+  callbacks:
+    moveDirectionChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    stand:
+      m_PersistentCalls:
+        m_Calls: []
+    jumped:
+      m_PersistentCalls:
+        m_Calls: []
+    fall:
+      m_PersistentCalls:
+        m_Calls: []
+    wallCollisionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    wallCollisionStopped:
+      m_PersistentCalls:
+        m_Calls: []
+    arrived:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &7165412181837687539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181837687537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9cc2e30a298e1042b9b9d2a02f75174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {fileID: 7165412181837687542}
+  data: {fileID: 0}
+--- !u!1 &7165412181878054190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7165412181878054163}
+  - component: {fileID: 7165412181878054160}
+  - component: {fileID: 7165412181878054161}
+  - component: {fileID: 7165412181878054165}
+  - component: {fileID: 7165412181878054162}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7165412181878054163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181878054190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7165412181837687541}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &7165412181878054160
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181878054190}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &7165412181878054161
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181878054190}
+  m_Enabled: 1
+--- !u!114 &7165412181878054165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181878054190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a1d2a8b2940494facd4968f3402298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 7165412181275740906}
+  clipAgainstWalls: 1
+  targetDistance: 10
+  userDistance: 0
+  maxVerticalAngle: 100
+  minVerticalAngle: -100
+  inputMultiplier: {x: 1, y: 1}
+  horizontalRotateInput: 0
+  verticalRotateInput: 0
+  zoomInput: 0
+  knownCameraViews: []
+  lerpDurationMs: 250
+--- !u!114 &7165412181878054162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412181878054190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9a412ca4a186a4f8bbd026e756bb7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whereToGo: {fileID: 0}
+  worldPositionStays: 0
+--- !u!1 &7165412182393592486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7165412182393592489}
+  - component: {fileID: 7165412182393592490}
+  - component: {fileID: 7165412182393592491}
+  - component: {fileID: 7165412182393592488}
+  m_Layer: 0
+  m_Name: player input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7165412182393592489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412182393592486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7165412181837687541}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7165412182393592490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412182393592486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2e42da92bb7164895f80b582b69acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 7165412181837687539}
+--- !u!114 &7165412182393592491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412182393592486}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20599b057c2a789458a822a7141bc92f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyBinds: []
+  AxisBinds:
+  - name: mouselook X
+    disable: 0
+    axis:
+    - name: Mouse X
+      multiplier: 5
+      filteredValue: 0
+      stickyInput: 0
+      modifiers: 
+    axisEvent:
+      onAxisChange:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: set_HorizontalRotateInput
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - name: mouselook Y
+    disable: 0
+    axis:
+    - name: Mouse Y
+      multiplier: 5
+      filteredValue: 0
+      stickyInput: 0
+      modifiers: 
+    axisEvent:
+      onAxisChange:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: set_VerticalRotateInput
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+--- !u!114 &7165412182393592488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165412182393592486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20599b057c2a789458a822a7141bc92f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyBinds:
+  - name: use mouselook
+    priority: 1000
+    disable: 0
+    alwaysTriggerable: 0
+    keyCombinations:
+    - modifiers: 
+      key: 324
+    keyEvent:
+      onPress:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412182393592491}
+            m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+            m_MethodName: set_enabled
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: SetMouseCursorLock
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+      onHold:
+        m_PersistentCalls:
+          m_Calls: []
+      onRelease:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412182393592491}
+            m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+            m_MethodName: set_enabled
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: SetMouseCursorLock
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - name: zoom in
+    priority: 1000
+    disable: 0
+    alwaysTriggerable: 0
+    keyCombinations:
+    - modifiers: 
+      key: 280
+    keyEvent:
+      onPress:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: set_ZoomInput
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: -5
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      onHold:
+        m_PersistentCalls:
+          m_Calls: []
+      onRelease:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: set_ZoomInput
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - name: zoom out
+    priority: 1000
+    disable: 0
+    alwaysTriggerable: 0
+    keyCombinations:
+    - modifiers: 
+      key: 281
+    keyEvent:
+      onPress:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: set_ZoomInput
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 5
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      onHold:
+        m_PersistentCalls:
+          m_Calls: []
+      onRelease:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: set_ZoomInput
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - name: jump
+    priority: 1000
+    disable: 0
+    alwaysTriggerable: 0
+    keyCombinations:
+    - modifiers: 
+      key: 32
+    keyEvent:
+      onPress:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412182393592490}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterProxy, Assembly-CSharp
+            m_MethodName: set_Jump
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 1
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      onHold:
+        m_PersistentCalls:
+          m_Calls: []
+      onRelease:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412182393592490}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterProxy, Assembly-CSharp
+            m_MethodName: set_Jump
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  AxisBinds:
+  - name: strafe right/left
+    disable: 0
+    axis:
+    - name: Horizontal
+      multiplier: 1
+      filteredValue: 0
+      stickyInput: 0
+      modifiers: 
+    axisEvent:
+      onAxisChange:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412182393592490}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterProxy, Assembly-CSharp
+            m_MethodName: set_StrafeRightMovement
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - name: move forward/backward
+    disable: 0
+    axis:
+    - name: Vertical
+      multiplier: 1
+      filteredValue: 0
+      stickyInput: 0
+      modifiers: 
+    axisEvent:
+      onAxisChange:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412182393592490}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterProxy, Assembly-CSharp
+            m_MethodName: set_MoveForwardMovement
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - name: zoom in/out
+    disable: 0
+    axis:
+    - name: Mouse ScrollWheel
+      multiplier: -4
+      filteredValue: 0
+      stickyInput: 0
+      modifiers: 
+    axisEvent:
+      onAxisChange:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 7165412181878054165}
+            m_TargetAssemblyTypeName: NonStandard.Character.CharacterCamera, Assembly-CSharp
+            m_MethodName: AddToTargetDistance
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
