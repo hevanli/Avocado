@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a1d2a8b2940494facd4968f3402298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 7165412181275740906}
+  _target: {fileID: 7165412181179619407}
   clipAgainstWalls: 1
   targetDistance: 10
   userDistance: 0
